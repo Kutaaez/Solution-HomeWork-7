@@ -42,9 +42,9 @@ Deliverables
  * Main demo that prints episode titles in each traversal mode.
  * A short README explaining why Iterator is preferable to simply exposing List<Episode>.
 
-Stretch goal for honors credit 
- * Generate 10 000 fake episodes, time each iterator type, 
-   and print a mini performance report (ASCII bar chart or numbers).
+    Stretch goal for honors credit 
+     * Generate 10 000 fake episodes, time each iterator type, 
+       and print a mini performance report (ASCII bar chart or numbers).
 
 Suggested flow
  * Correct iterator interface and normal traversal
