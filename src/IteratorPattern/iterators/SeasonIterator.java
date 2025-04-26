@@ -3,10 +3,11 @@ package IteratorPattern.iterators;
 import IteratorPattern.models.Episode;
 import IteratorPattern.models.Season;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class SeasonIterator implements EpisodeIterator {
-    private List<Episode> episodes;
+    private ArrayList<Episode> episodes;
     private int index = 0;
     public SeasonIterator(Season season) {
         this.episodes = season.getSeasonEpisodes();

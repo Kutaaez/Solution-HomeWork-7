@@ -1,8 +1,12 @@
 package IteratorPattern.models;
 
-import java.util.ArrayList;
+import IteratorPattern.iterators.EpisodeIterator;
+import IteratorPattern.iterators.SeasonIterator;
 
-public class Season {
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Season implements Iterable<Episode> {
     public int seasonNumber;
     public ArrayList<Episode> seasonEpisodes;
 
@@ -33,5 +37,14 @@ public class Season {
                 "seasonNumber=" + seasonNumber +
                 ", seasonEpisodes=" + seasonEpisodes +
                 '}';
+    }
+
+    @Override
+    public Iterator<Episode> iterator() {
+        return new SeasonIterator(this);
+    }
+
+    public EpisodeIterator createSeasonIterator() {
+        return new SeasonIterator(this);
     }
 }
