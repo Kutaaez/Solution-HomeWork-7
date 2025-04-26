@@ -3,9 +3,15 @@ package IteratorPattern.models;
 import java.util.ArrayList;
 
 public class Season {
-    public ArrayList<Episode> season;
+    public int seasonNumber;
+    public ArrayList<Episode> seasonEpisodes;
+
+    public Season(int seasonNumber) {
+        this.seasonNumber = seasonNumber;
+        seasonEpisodes = new ArrayList<>();
+    }
 
     public  void addEpisode(Episode e){
-        season.add(e);
+        seasonEpisodes.add(e);
     }
 }
