@@ -13,4 +13,24 @@ public class Series {
     public void addSeason(Season s){
         seriesSeason.add(s);
     }
+
+    public String getSeriesTittle() {
+        return seriesTittle;
+    }
+
+    public void setSeriesTittle(String seriesTittle) {
+        this.seriesTittle = seriesTittle;
+    }
+
+    public ArrayList<Season> getSeriesSeason() {
+        return seriesSeason;
+    }
+
+    @Override
+    public String toString() {
+        return "Series{" +
+                "seriesTittle='" + seriesTittle + '\'' +
+                ", seriesSeason=" + seriesSeason +
+                '}';
+    }
 }

@@ -14,4 +14,24 @@ public class Season {
     public  void addEpisode(Episode e){
         seasonEpisodes.add(e);
     }
+
+    public int getSeasonNumber() {
+        return seasonNumber;
+    }
+
+    public void setSeasonNumber(int seasonNumber) {
+        this.seasonNumber = seasonNumber;
+    }
+
+    public ArrayList<Episode> getSeasonEpisodes() {
+        return seasonEpisodes;
+    }
+
+    @Override
+    public String toString() {
+        return "Season{" +
+                "seasonNumber=" + seasonNumber +
+                ", seasonEpisodes=" + seasonEpisodes +
+                '}';
+    }
 }
