@@ -1,6 +1,6 @@
 package IteratorPattern.iterators;
 
-public interface Iterator<T> {
+public interface EpisodeIterator<T> {
     boolean hasNext();
     T next();
 }

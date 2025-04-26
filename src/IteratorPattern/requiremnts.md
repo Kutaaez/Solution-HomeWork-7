@@ -19,7 +19,7 @@ Starter code (skeleton)
     class Series   { void addSeason(Season s); }
 
 Tasks
-1.Define an interface EpisodeIterator with boolean hasNext() and Episode next().
+    1.Define an interface EpisodeIterator with boolean hasNext() and Episode next().
 2.Implement three concrete iterators for a single season:
     SeasonIterator – normal order.
     ReverseSeasonIterator – reverse order.

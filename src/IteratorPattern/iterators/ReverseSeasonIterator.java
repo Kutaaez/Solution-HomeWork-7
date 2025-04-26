@@ -5,7 +5,7 @@ import IteratorPattern.models.Season;
 
 import java.util.List;
 
-public class ReverseSeasonIterator implements Iterator{
+public class ReverseSeasonIterator implements EpisodeIterator {
     private List<Episode> episodes;
     private int index ;
     public ReverseSeasonIterator(Season season) {
