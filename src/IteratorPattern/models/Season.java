@@ -41,9 +41,8 @@ public class Season implements Iterable<Episode> {
 
     @Override
     public Iterator<Episode> iterator() {
-        return new SeasonIterator(this);
+        return seasonEpisodes.iterator();
     }
-
     public EpisodeIterator createSeasonIterator() {
         return new SeasonIterator(this);
     }

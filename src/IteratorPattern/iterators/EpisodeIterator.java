@@ -1,6 +1,8 @@
 package IteratorPattern.iterators;
 
-public interface EpisodeIterator<T> {
+import IteratorPattern.models.Episode;
+
+public interface EpisodeIterator {
     boolean hasNext();
-    T next();
+    Episode next();
 }

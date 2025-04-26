@@ -19,7 +19,7 @@ public class SeasonIterator implements EpisodeIterator {
     }
 
     @Override
-    public Object next() {
+    public Episode next() {
         return episodes.get(index++);
     }
 }
