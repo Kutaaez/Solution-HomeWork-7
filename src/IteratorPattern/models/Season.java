@@ -1,7 +1,11 @@
 package IteratorPattern.models;
 
-public class Season {
-    public  void addEpisode(Episode e){
+import java.util.ArrayList;
 
+public class Season {
+    public ArrayList<Episode> season;
+
+    public  void addEpisode(Episode e){
+        season.add(e);
     }
 }
